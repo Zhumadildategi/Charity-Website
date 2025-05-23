@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADYA KZ</title>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/project.jpg') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.project img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn.primary {
+    background-color: #ff6b6b;
+}
+
+.btn.secondary {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+</style>></head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">HADYA <span class="highlight">KZ</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#ongoing-projects">Ongoing Projects</a></li>
+                <li><a href="#completed-projects">Completed Projects</a></li>
+                <li><a href="#how-to-help">How to Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Our Projects</h1>
+            <p>Transforming lives, one project at a time. Explore how we're making an impact worldwide.</p>
+        </div>
+    </header>
+
+    <section id="ongoing-projects" class="section">
+        <div class="container">
+            <h2>Ongoing Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="images/project1.webp" alt="Project 1">
+                    <h3>Education for All</h3>
+                    <p>Providing access to quality education for children in remote areas.</p>
+                    <a class="btn primary" href="#learn-more">Learn More</a>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Safe Shelter Initiative</h3>
+                    <p>Building shelters for families affected by natural disasters.</p>
+                    <a class="btn primary" href="#learn-more">Learn More</a>
+                </div>
+                <div class="project">
+                    <img src="images/project3.jpeg" alt="Project 3">
+                    <h3>Healthcare Access</h3>
+                    <p>Improving healthcare facilities and providing essential supplies.</p>
+                    <a class="btn primary" href="#learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="completed-projects" class="section">
+        <div class="container">
+            <h2>Completed Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="images/project4.jpg" alt="Project 4">
+                    <h3>Clean Water Initiative</h3>
+                    <p>Installed over 100 clean water wells in rural areas.</p>
+                </div>
+                <div class="project">
+                    <img src="images/project5.jpg" alt="Project 5">
+                    <h3>Feeding the Hungry</h3>
+                    <p>Provided over 1 million meals to underprivileged communities.</p>
+                </div>
+                <div class="project">
+                    <img src="images/project6.jpg" alt="Project 6">
+                    <h3>Youth Empowerment</h3>
+                    <p>Trained over 2,000 young people in vocational skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-help" class="section">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>Join us in our mission to create lasting change. Whether through donations, volunteering, or spreading the word, every contribution counts.</p>
+            <a class="btn primary" href="donate.html">Donate Now</a>
+            <a class="btn secondary" href="contact.html">Become a Volunteer</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Hadya kz. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
